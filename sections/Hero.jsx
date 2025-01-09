@@ -55,7 +55,6 @@ const Hero = () => (
         </a>
       </motion.div>
     </motion.div>
-    Hero section
   </section>
 )
 
