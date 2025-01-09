@@ -17,7 +17,7 @@ export const navVariants = {
       delay: 1,
     },
   },
-};
+}
 
 export const slideIn = (direction, type, delay, duration) => ({
   hidden: {
@@ -34,7 +34,7 @@ export const slideIn = (direction, type, delay, duration) => ({
       ease: 'easeOut',
     },
   },
-});
+})
 
 export const staggerContainer = (staggerChildren, delayChildren) => ({
   hidden: {},
@@ -44,7 +44,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
       delayChildren,
     },
   },
-});
+})
 
 export const textVariant = (delay) => ({
   hidden: {
@@ -60,7 +60,7 @@ export const textVariant = (delay) => ({
       delay,
     },
   },
-});
+})
 
 export const textContainer = {
   hidden: {
@@ -70,7 +70,7 @@ export const textContainer = {
     opacity: 1,
     transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
   }),
-};
+}
 
 export const textVariant2 = {
   hidden: {
@@ -85,7 +85,30 @@ export const textVariant2 = {
       ease: 'easeIn',
     },
   },
-};
+}
+
+export const rotationVariants = {
+  hidden: {
+    rotate: 0,
+    scale: 1,
+  },
+  show: {
+    rotate: -360,
+    scale: [1, 1.1, 1], // Pulsation: grows to 1.1 and shrinks back to 1
+    transition: {
+      rotate: {
+        duration: 15,
+        repeat: Infinity, // Continuous rotation
+        ease: 'linear', // Constant speed for rotation
+      },
+      scale: {
+        duration: 2.5, // Adjust pulsation speed
+        repeat: Infinity, // Continuous pulsation
+        ease: 'easeInOut', // Smooth in and out pulsation
+      },
+    },
+  },
+}
 
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
@@ -104,7 +127,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
       ease: 'easeOut',
     },
   },
-});
+})
 
 export const planetVariants = (direction) => ({
   hidden: {
@@ -120,7 +143,7 @@ export const planetVariants = (direction) => ({
       delay: 0.5,
     },
   },
-});
+})
 
 export const zoomIn = (delay, duration) => ({
   hidden: {
@@ -137,7 +160,7 @@ export const zoomIn = (delay, duration) => ({
       ease: 'easeOut',
     },
   },
-});
+})
 
 export const footerVariants = {
   hidden: {
@@ -158,4 +181,4 @@ export const footerVariants = {
       delay: 0.5,
     },
   },
-};
+}
