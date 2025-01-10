@@ -71,4 +71,4 @@ module.exports = {
     semi: ['error', 'always'], // Enforce semicolons
     'react/self-closing-comp': 'off', // Disable self-closing comp rule
   },
-}
+};
